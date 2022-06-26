@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Data
@@ -17,6 +18,7 @@ import javax.persistence.Table;
         name = "users"
 )
 public class UserEntity {
+    @Id
     private Long uid;
     private String email;
     private String name;
