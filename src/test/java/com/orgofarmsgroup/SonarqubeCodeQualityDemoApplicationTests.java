@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SonarqubeCodeQualityDemoApplicationTests {
 	private static final Logger LOGGER = LoggerFactory.getLogger(SonarqubeCodeQualityDemoApplicationTests.class);
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 		LOGGER.info("contextLoads completed.");
 	}
 
