@@ -3,3 +3,6 @@ spring:
     name: try-junit-mockito
   profiles:
     active: dev, h2
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

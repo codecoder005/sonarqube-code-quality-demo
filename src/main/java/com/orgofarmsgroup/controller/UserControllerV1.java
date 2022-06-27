@@ -1,5 +1,6 @@
 package com.orgofarmsgroup.controller;
 
+import io.swagger.annotations.ApiOperation;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,10 @@ import java.sql.Timestamp;
 public class UserControllerV1 {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserControllerV1.class);
 
+    @ApiOperation(
+            value = "Get users api status",
+            notes = "This api will return a json object with the status of the api"
+    )
     @GetMapping
     public ResponseEntity<Object> status() {
         LOGGER.info("status check received.");
